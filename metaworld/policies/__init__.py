@@ -86,7 +86,7 @@ from metaworld.policies.sawyer_pick_out_of_hole_v2_policy import (
     SawyerPickOutOfHoleV2Policy,
 )
 from metaworld.policies.sawyer_pick_place_v2_policy import SawyerPickPlaceV2Policy
-from metaworld.policies.sawyer_pick_place_v2_policy import SawyerPickPlaceV2Policy as SawyerPickPlaceBigV2Policy
+from metaworld.policies.sawyer_pick_place_wall_v2_policy import SawyerPickPlaceWallV2Policy as SawyerPickPlaceWallBigV2Policy
 from metaworld.policies.sawyer_pick_place_wall_v2_policy import (
     SawyerPickPlaceWallV2Policy,
 )
@@ -218,6 +218,6 @@ __all__ = [
     "SawyerWindowOpenV2Policy",
     "SawyerWindowCloseV2Policy",
     "SawyerShelfPlaceBigV2Policy",
-    "SawyerPickPlaceBigV2Policy",
+    "SawyerPickPlaceWallBigV2Policy",
     "SawyerBinPickingBigV2Policy",
 ]
