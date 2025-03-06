@@ -1,0 +1,3 @@
+[submodule "metaworld/sims/YCB_sim"]
+	path = metaworld/sims/YCB_sim
+	url = https://github.com/vikashplus/YCB_sim.git

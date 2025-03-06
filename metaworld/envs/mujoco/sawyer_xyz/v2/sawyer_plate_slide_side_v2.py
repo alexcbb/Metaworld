@@ -19,6 +19,7 @@ class SawyerPlateSlideSideEnvV2(SawyerXYZEnv):
         render_mode: RenderMode | None = None,
         camera_name: str | None = None,
         camera_id: int | None = None,
+        model_name: str | None = None,
     ) -> None:
         goal_low = (-0.3, 0.54, 0.0)
         goal_high = (-0.25, 0.66, 0.0)
@@ -33,6 +34,7 @@ class SawyerPlateSlideSideEnvV2(SawyerXYZEnv):
             render_mode=render_mode,
             camera_name=camera_name,
             camera_id=camera_id,
+            model_name=model_name
         )
 
         self.init_config: InitConfigDict = {

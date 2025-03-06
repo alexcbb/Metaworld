@@ -7,6 +7,9 @@ from metaworld.envs.mujoco.sawyer_xyz.v2.sawyer_basketball_v2 import (
 from metaworld.envs.mujoco.sawyer_xyz.v2.sawyer_bin_picking_v2 import (
     SawyerBinPickingEnvV2,
 )
+from metaworld.envs.mujoco.sawyer_xyz.v2.sawyer_bin_picking_big_v2 import (
+    SawyerBinPickingBigEnvV2,
+)
 from metaworld.envs.mujoco.sawyer_xyz.v2.sawyer_box_close_v2 import SawyerBoxCloseEnvV2
 from metaworld.envs.mujoco.sawyer_xyz.v2.sawyer_button_press_topdown_v2 import (
     SawyerButtonPressTopdownEnvV2,

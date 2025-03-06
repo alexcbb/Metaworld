@@ -18,6 +18,7 @@ class SawyerButtonPressWallEnvV2(SawyerXYZEnv):
         render_mode: RenderMode | None = None,
         camera_name: str | None = None,
         camera_id: int | None = None,
+        model_name: str | None = None,
     ) -> None:
         hand_low = (-0.5, 0.40, 0.05)
         hand_high = (0.5, 1, 0.5)
@@ -30,6 +31,7 @@ class SawyerButtonPressWallEnvV2(SawyerXYZEnv):
             render_mode=render_mode,
             camera_name=camera_name,
             camera_id=camera_id,
+            model_name=model_name,
         )
 
         self.init_config: InitConfigDict = {
@@ -51,7 +53,7 @@ class SawyerButtonPressWallEnvV2(SawyerXYZEnv):
 
     @property
     def model_name(self) -> str:
-        return full_v2_path_for("sawyer_xyz/sawyer_button_press_wall.xml")
+        return full_v2_path_for("sawyer_xyz/sawyer_button_press_wall.xml") if self._model_name is None else self._model_name
 
     @SawyerXYZEnv._Decorators.assert_task_is_set
     def evaluate_state(

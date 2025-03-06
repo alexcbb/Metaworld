@@ -20,6 +20,7 @@ class SawyerHandlePressEnvV2(SawyerXYZEnv):
         render_mode: RenderMode | None = None,
         camera_name: str | None = None,
         camera_id: int | None = None,
+        model_name: str | None = None,
     ) -> None:
         hand_low = (-0.5, 0.40, 0.05)
         hand_high = (0.5, 1.0, 0.5)
@@ -34,6 +35,7 @@ class SawyerHandlePressEnvV2(SawyerXYZEnv):
             render_mode=render_mode,
             camera_name=camera_name,
             camera_id=camera_id,
+            model_name=model_name
         )
 
         self.init_config: InitConfigDict = {

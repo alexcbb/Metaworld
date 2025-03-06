@@ -26,6 +26,7 @@ ENV_CLS_MAP = {
     "assembly-v2": v2.SawyerNutAssemblyEnvV2,
     "basketball-v2": v2.SawyerBasketballEnvV2,
     "bin-picking-v2": v2.SawyerBinPickingEnvV2,
+    "bin-picking-big-v2": v2.SawyerBinPickingBigEnvV2,
     "box-close-v2": v2.SawyerBoxCloseEnvV2,
     "button-press-topdown-v2": v2.SawyerButtonPressTopdownEnvV2,
     "button-press-topdown-wall-v2": v2.SawyerButtonPressTopdownWallEnvV2,
@@ -216,6 +217,7 @@ ALL_V2_ENVIRONMENTS = _get_env_dict(
         "assembly-v2",
         "basketball-v2",
         "bin-picking-v2",
+        "bin-picking-big-v2",
         "box-close-v2",
         "button-press-topdown-v2",
         "button-press-topdown-wall-v2",
@@ -374,6 +376,7 @@ ML45_V2 = _get_train_test_env_dict(
     ],
     test_env_names=[
         "bin-picking-v2",
+        "bin-picking-big-v2",
         "box-close-v2",
         "hand-insert-v2",
         "door-lock-v2",

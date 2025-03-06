@@ -1,0 +1,104 @@
+<mujoco>
+    
+    <include file="../scene/basic_scene.xml" />
+    <include file="../objects/assets/assembly_peg_dependencies.xml" />
+    <include file="../objects/assets/xyz_base_dependencies.xml" />
+
+    <worldbody>
+
+        <include file="../objects/assets/xyz_base.xml" />
+        <body name="obj" pos="0.1 0.6 0.02" quat="1 0 0 1">
+            <joint name="objjoint" type="free" limited="false" damping="0." armature="0." />
+            <include file="../objects/assets/assembly_peg.xml" />
+        </body>
+        <body name="peg" pos="0.1 0.8 0.05">
+          
+          <geom material="asmbly_metal" pos="0 0 0" rgba="1 0.3 0.3 1" size="0.02 0.05" type="cylinder" conaffinity="1" contype="1" group="1" friction="1 0.005 0.0001" />
+          <site name="pegTop" pos="0 0 0.05" size="0.005" rgba="0 0.8 0 1" />
+        </body>
+    <body name="SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" pos="0.18443426489830017 0.6043500304222107 0.0" quat="0.4548227565029967 0.0 0.0 0.8905819783529284">
+            <freejoint name="joint_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" />
+            
+
+<body childclass="SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP_base" name="SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP1">
+        <geom class="SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP_col" name="SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" mesh="model_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" mass="0.5" friction="0.95 0.3 0.1" contype="1" conaffinity="1" condim="4" />
+      <geom material="material_0_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" mesh="model_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" contype="0" conaffinity="0" group="2" />
+      <geom mesh="model_collision_0_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_1_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_2_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_3_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_4_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_5_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_6_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_7_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_8_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_9_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_10_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_11_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_12_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_13_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_14_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_15_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_16_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_17_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_18_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_19_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_20_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_21_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_22_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_23_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_24_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_25_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_26_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_27_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_28_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_29_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_30_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+      <geom mesh="model_collision_31_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" type="mesh" group="3" />
+    </body>
+        </body></worldbody>
+
+    <actuator>
+        <position ctrllimited="true" ctrlrange="-1 1" joint="r_close" kp="400" user="1" />
+        <position ctrllimited="true" ctrlrange="-1 1" joint="l_close" kp="400" user="1" />
+    </actuator>
+    <equality>
+        <weld body1="mocap" body2="hand" solref="0.02 1" />
+    </equality>
+<include file="../objects/assets/factors_eval.xml" /><include file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/dependencies.xml" /><asset>
+    <texture type="2d" name="texture_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/texture.png" />
+    <material name="material_0_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" texture="texture_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" specular="0.5" shininess="0.5" />
+    <mesh name="model_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_0_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_0.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_1_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_1.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_2_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_2.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_3_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_3.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_4_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_4.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_5_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_5.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_6_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_6.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_7_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_7.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_8_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_8.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_9_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_9.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_10_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_10.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_11_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_11.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_12_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_12.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_13_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_13.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_14_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_14.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_15_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_15.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_16_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_16.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_17_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_17.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_18_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_18.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_19_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_19.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_20_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_20.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_21_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_21.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_22_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_22.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_23_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_23.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_24_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_24.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_25_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_25.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_26_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_26.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_27_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_27.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_28_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_28.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_29_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_29.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_30_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_30.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+    <mesh name="model_collision_31_SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP" file="../../mujoco_scanned_objects/SpiderMan_Titan_Hero_12Inch_Action_Figure_5Hnn4mtkFsP/model_collision_31.stl" scale="0.4420308470726013 0.4420308470726013 0.4420308470726013" />
+  </asset></mujoco>

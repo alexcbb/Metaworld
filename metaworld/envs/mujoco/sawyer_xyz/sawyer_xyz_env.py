@@ -179,7 +179,9 @@ class SawyerXYZEnv(SawyerMocapBase, EzPickle):
         render_mode: RenderMode | None = None,
         camera_id: int | None = None,
         camera_name: str | None = None,
+        model_name: str=None,
     ) -> None:
+        self._model_name = model_name
         self.action_scale = action_scale
         self.action_rot_scale = action_rot_scale
         self.hand_low = np.array(hand_low)

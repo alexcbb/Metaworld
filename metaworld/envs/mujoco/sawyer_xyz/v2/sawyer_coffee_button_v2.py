@@ -18,6 +18,7 @@ class SawyerCoffeeButtonEnvV2(SawyerXYZEnv):
         render_mode: RenderMode | None = None,
         camera_name: str | None = None,
         camera_id: int | None = None,
+        model_name: str | None = None,
     ) -> None:
         self.max_dist = 0.03
 
@@ -36,6 +37,7 @@ class SawyerCoffeeButtonEnvV2(SawyerXYZEnv):
             render_mode=render_mode,
             camera_name=camera_name,
             camera_id=camera_id,
+            model_name=model_name,
         )
 
         self.init_config: InitConfigDict = {
@@ -55,7 +57,7 @@ class SawyerCoffeeButtonEnvV2(SawyerXYZEnv):
 
     @property
     def model_name(self) -> str:
-        return full_v2_path_for("sawyer_xyz/sawyer_coffee.xml")
+        return full_v2_path_for("sawyer_xyz/sawyer_coffee.xml") if self._model_name is None else self._model_name
 
     @SawyerXYZEnv._Decorators.assert_task_is_set
     def evaluate_state(
