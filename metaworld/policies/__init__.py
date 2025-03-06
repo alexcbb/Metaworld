@@ -3,6 +3,7 @@ from metaworld.policies.sawyer_assembly_v2_policy import SawyerAssemblyV2Policy
 from metaworld.policies.sawyer_basketball_v1_policy import SawyerBasketballV1Policy
 from metaworld.policies.sawyer_basketball_v2_policy import SawyerBasketballV2Policy
 from metaworld.policies.sawyer_bin_picking_v2_policy import SawyerBinPickingV2Policy
+from metaworld.policies.sawyer_bin_picking_v2_policy import SawyerBinPickingV2Policy as SawyerBinPickingBigV2Policy
 from metaworld.policies.sawyer_box_close_v1_policy import SawyerBoxCloseV1Policy
 from metaworld.policies.sawyer_box_close_v2_policy import SawyerBoxCloseV2Policy
 from metaworld.policies.sawyer_button_press_topdown_v1_policy import (
@@ -85,6 +86,7 @@ from metaworld.policies.sawyer_pick_out_of_hole_v2_policy import (
     SawyerPickOutOfHoleV2Policy,
 )
 from metaworld.policies.sawyer_pick_place_v2_policy import SawyerPickPlaceV2Policy
+from metaworld.policies.sawyer_pick_place_v2_policy import SawyerPickPlaceV2Policy as SawyerPickPlaceBigV2Policy
 from metaworld.policies.sawyer_pick_place_wall_v2_policy import (
     SawyerPickPlaceWallV2Policy,
 )
@@ -113,6 +115,7 @@ from metaworld.policies.sawyer_reach_v2_policy import SawyerReachV2Policy
 from metaworld.policies.sawyer_reach_wall_v2_policy import SawyerReachWallV2Policy
 from metaworld.policies.sawyer_shelf_place_v1_policy import SawyerShelfPlaceV1Policy
 from metaworld.policies.sawyer_shelf_place_v2_policy import SawyerShelfPlaceV2Policy
+from metaworld.policies.sawyer_shelf_place_v2_policy import SawyerShelfPlaceV2Policy as SawyerShelfPlaceBigV2Policy
 from metaworld.policies.sawyer_soccer_v1_policy import SawyerSoccerV1Policy
 from metaworld.policies.sawyer_soccer_v2_policy import SawyerSoccerV2Policy
 from metaworld.policies.sawyer_stick_pull_v1_policy import SawyerStickPullV1Policy
@@ -214,4 +217,7 @@ __all__ = [
     "SawyerSweepV2Policy",
     "SawyerWindowOpenV2Policy",
     "SawyerWindowCloseV2Policy",
+    "SawyerShelfPlaceBigV2Policy",
+    "SawyerPickPlaceBigV2Policy",
+    "SawyerBinPickingBigV2Policy",
 ]
