@@ -10,6 +10,9 @@ from metaworld.envs.mujoco.sawyer_xyz.v2.sawyer_bin_picking_v2 import (
 from metaworld.envs.mujoco.sawyer_xyz.v2.sawyer_bin_picking_big_v2 import (
     SawyerBinPickingBigEnvV2,
 )
+from metaworld.envs.mujoco.sawyer_xyz.v2.sawyer_shelf_place_big_v2 import (
+    SawyerShelfPlaceBigEnvV2,
+)
 from metaworld.envs.mujoco.sawyer_xyz.v2.sawyer_box_close_v2 import SawyerBoxCloseEnvV2
 from metaworld.envs.mujoco.sawyer_xyz.v2.sawyer_button_press_topdown_v2 import (
     SawyerButtonPressTopdownEnvV2,
@@ -90,6 +93,9 @@ from metaworld.envs.mujoco.sawyer_xyz.v2.sawyer_pick_place_v2 import (
 from metaworld.envs.mujoco.sawyer_xyz.v2.sawyer_pick_place_wall_v2 import (
     SawyerPickPlaceWallEnvV2,
 )
+from metaworld.envs.mujoco.sawyer_xyz.v2.sawyer_pick_place_wall_big_v2 import (
+    SawyerPickPlaceWallBigEnvV2,
+)
 from metaworld.envs.mujoco.sawyer_xyz.v2.sawyer_plate_slide_back_side_v2 import (
     SawyerPlateSlideBackSideEnvV2,
 )
@@ -164,6 +170,7 @@ __all__ = [
     "SawyerPickOutOfHoleEnvV2",
     "SawyerPickPlaceEnvV2",
     "SawyerPickPlaceWallEnvV2",
+    "SawyerPickPlaceWallBigEnvV2",
     "SawyerPlateSlideBackSideEnvV2",
     "SawyerPlateSlideBackEnvV2",
     "SawyerPlateSlideSideEnvV2",
@@ -181,4 +188,6 @@ __all__ = [
     "SawyerSweepIntoGoalEnvV2",
     "SawyerWindowCloseEnvV2",
     "SawyerWindowOpenEnvV2",
+    "SawyerBinPickingBigEnvV2",
+    "SawyerShelfPlaceBigEnvV2",
 ]
