@@ -1,0 +1,36 @@
+<mujoco>
+  <include file="../scene/basic_scene.xml"/>
+  <include file="../objects/assets/buttonbox_dependencies.xml"/>
+  <include file="../objects/assets/xyz_base_dependencies.xml"/>
+  <include file="../../../sims/YCB_sim/includes/defaults_ycb.xml"/>
+  <include file="../../../sims/YCB_sim/includes/assets_004_sugar_box.xml"/>
+  <include file="../../../sims/YCB_sim/includes/assets_005_tomato_soup_can.xml"/>
+  <include file="../../../sims/YCB_sim/includes/assets_035_power_drill.xml"/>
+
+    <worldbody>
+      <include file="../objects/assets/xyz_base.xml"/>
+
+        <body name="box" pos="0 0.9 0.12">
+          <include file="../objects/assets/buttonbox.xml"/>
+          <site name="buttonStart" pos="0 -0.1935 0" size="0.005" rgba="0 0.8 0 1"/>
+          <site name="hole" pos="0 -0.1 0" size="0.005" rgba="0 0.8 0 1"/>
+        </body>
+        <body name="sugar_box" pos="-0.4 0.4 .06">
+            <include file="../../../sims/YCB_sim/includes/body_004_sugar_box.xml"/>
+        </body>
+        <body name="tomato_soup_can" pos="0.3 0.8 .06">
+            <include file="../../../sims/YCB_sim/includes/body_005_tomato_soup_can.xml"/>
+        </body>
+        <body name="power_drill" pos="0.5 0.6 .06">
+            <include file="../../../sims/YCB_sim/includes/body_035_power_drill.xml"/>
+        </body>
+    </worldbody>
+
+    <actuator>
+        <position ctrllimited="true" ctrlrange="-1 1" joint="r_close" kp="400"  user="1"/>
+        <position ctrllimited="true" ctrlrange="-1 1" joint="l_close" kp="400"  user="1"/>
+    </actuator>
+    <equality>
+        <weld body1="mocap" body2="hand" solref="0.02 1"/>
+    </equality>
+</mujoco>
