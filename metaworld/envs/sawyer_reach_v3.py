@@ -33,7 +33,7 @@ class SawyerReachEnvV3(SawyerXYZEnv):
         render_mode: RenderMode | None = None,
         camera_name: str | None = None,
         camera_id: int | None = None,
-        model_name: str | None = None,
+        # model_name: str = full_V3_path_for("sawyer_xyz/sawyer_reach_v3.xml") ,
         reward_function_version: str = "v2",
         height: int = 480,
         width: int = 480,
@@ -51,7 +51,7 @@ class SawyerReachEnvV3(SawyerXYZEnv):
             render_mode=render_mode,
             camera_name=camera_name,
             camera_id=camera_id,
-            model_name=model_name,
+            # model_name=model_name,
             height=height,
             width=width,
         )

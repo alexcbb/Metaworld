@@ -36,7 +36,7 @@ class SawyerDrawerCloseEnvV3(SawyerXYZEnv):
             render_mode=render_mode,
             camera_name=camera_name,
             camera_id=camera_id,
-            model_name=model_name
+            model_name=model_name,
             height=height,
             width=width,
         )
