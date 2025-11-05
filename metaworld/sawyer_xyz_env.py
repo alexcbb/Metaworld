@@ -48,7 +48,7 @@ class SawyerMocapBase(mjenv_gym):
         camera_name: str | None = None,
         camera_id: int | None = None,
         width: int = 480,
-        height: int = 480,
+        height: int = 480
     ) -> None:
         mjenv_gym.__init__(
             self,
