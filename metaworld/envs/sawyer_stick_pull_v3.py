@@ -52,7 +52,7 @@ class SawyerStickPullEnvV3(SawyerXYZEnv):
         self.hand_init_pos = self.init_config["hand_init_pos"]
 
         # Fix object init position.
-        self.obj_init_pos = np.array([0.2, 0.69, 0.0])
+        self.obj_init_pos = np.array([0.2, 0.60, 0.2])
         self.obj_init_qpos = np.array([0.0, 0.09])
         self.obj_space = Box(np.array(obj_low), np.array(obj_high), dtype=np.float64)
         self.goal_space = Box(np.array(goal_low), np.array(goal_high), dtype=np.float64)
@@ -146,7 +146,7 @@ class SawyerStickPullEnvV3(SawyerXYZEnv):
         qpos = self.data.qpos.flat.copy()
         qvel = self.data.qvel.flat.copy()
         qpos[16:18] = pos.copy()
-        qvel[16:18] = 0
+        qvel[15:17] = 0
         self.set_state(qpos, qvel)
 
     def reset_model(self) -> npt.NDArray[np.float64]:
